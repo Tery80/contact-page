@@ -36,7 +36,7 @@ public class Form {
     public void fillDropDown(String fieldName, String text) {
         WebElement textarea = base.getElementSafely(By.xpath("//*[contains(text(),'" + fieldName + "')]//..//select"));
         textarea.click();
-        base.getElementSafely(By.xpath("//*[text()='Pasts']")).click();
+        base.getElementSafely(By.xpath("//*[text()='" + text + "']")).click();
     }
 
     public void verifyMessage(String text) {
