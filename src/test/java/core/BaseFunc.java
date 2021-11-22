@@ -49,22 +49,13 @@ public class BaseFunc {
     }
 
     public void openContactPage() {
-//        Properties prop = new Properties();
-//        String fileName = "src/test/config.properties";
-//        try (FileInputStream fis = new FileInputStream(fileName)) {
-//            prop.load(fis);
-//        } catch (IOException ex) {
-//        }
-//        String link = prop.getProperty("webPage");
-//        driver.get(link);
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("src/test/config.properties"));
+            properties.load(new FileInputStream("src/main/resources/config.properties"));
         } catch (IOException e) {
         }
         String link = properties.getProperty("webPage");
         driver.get(link);
-        // driver.get("https://www.intrum.lv/saistibu-parvaldisana/sazinieties-ar-mums/");
     }
 
     public void clickButton(By locator) {
