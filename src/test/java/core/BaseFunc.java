@@ -25,7 +25,6 @@ public class BaseFunc {
 
     public void clickButton(By locator) throws InterruptedException {
         Thread.sleep(5000);
-//        wait.until(ExpectedConditions.elementToBeClickable(locator));
         element = driver.findElement(locator);
         element.click();
     }

@@ -32,5 +32,6 @@ public class ContactFormTest {
         formPopUp.fillDropDown("Kā vēlos saņemt atbildi", "Pasts");
 //        formPopUp.submit(); //don't uncomment, otherwise request will be sent
 //        formPopUp.verifyMessage("* Informejam, ka atbildi uz korekti");// Verify that correct information is displayed
+        contactPage.close();
     }
 }

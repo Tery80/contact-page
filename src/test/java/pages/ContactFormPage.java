@@ -19,4 +19,8 @@ public class ContactFormPage {
         base.clickButton(By.xpath("//a[@title='Iebildumu un komentāru forma']"));
     }
 
+    public void close() {
+        base.closeBrowser();
+    }
+
 }
