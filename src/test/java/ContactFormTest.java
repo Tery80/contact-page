@@ -11,7 +11,7 @@ public class ContactFormTest {
     private final Logger LOGGER = LogManager.getLogger(ContactFormTest.class);
 
     @Test
-    public void contactFormTest() throws InterruptedException {
+    public void contactFormTest() {
         LOGGER.info("Open Contact Page");
         base.openContactPage();
         ContactFormPage contactPage = new ContactFormPage(base);

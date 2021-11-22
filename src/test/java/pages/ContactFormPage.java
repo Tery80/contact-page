@@ -11,11 +11,11 @@ public class ContactFormPage {
         this.base = base;
     }
 
-    public void acceptAllCookies() throws InterruptedException {
+    public void acceptAllCookies() {
         base.clickButton(By.id("onetrust-accept-btn-handler"));
     }
 
-    public void openForma() throws InterruptedException {
+    public void openForma() {
         base.clickButton(By.xpath("//a[@title='Iebildumu un komentāru forma']"));
     }
 

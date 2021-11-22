@@ -8,13 +8,11 @@ import org.openqa.selenium.WebElement;
 public class Form {
     private BaseFunc base;
 
-
     public Form(BaseFunc base) {
         this.base = base;
     }
 
-
-    public void submit() throws InterruptedException {
+    public void submit() {
         base.clickButton(By.xpath("//input[@type='submit']"));
     }
 
