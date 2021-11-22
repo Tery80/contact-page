@@ -21,7 +21,9 @@ public class ContactFormTest {
 
         LOGGER.info("Check that Impossible to sent empty form");
         formPopUp.submit();
+
         formPopUp.verifyError("Lūdzu, aizpildiet lauku");
+
         LOGGER.info("Fill in form Correctly");
         formPopUp.fillField(" Vārds, uzvārds", "Ann Smith");
         formPopUp.fillField("Personas kods", "0123456");
@@ -31,7 +33,9 @@ public class ContactFormTest {
         formPopUp.fillText("Komentāra/iebildumu būtība", "Some extra information about my Debts");
         formPopUp.fillDropDown("Kā vēlos saņemt atbildi", "Pasts");
 //        formPopUp.submit(); //don't uncomment, otherwise request will be sent
+
 //        formPopUp.verifyMessage("* Informejam, ka atbildi uz korekti");// Verify that correct information is displayed
+
         contactPage.close();
     }
 }
